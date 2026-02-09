@@ -1,23 +1,24 @@
 title : Simple-Notion
 name: 'Simple-Notion'
 # description: 'Simple, light weight, responsive jekyll theme for hackers'
-url: https://hwei-esay.github.io/Simple-Notion
+url: https://hwei-esay.github.io
+baseurl: /Simple-Notion 
 
 markdown: kramdown
 highlighter: rouge
 javascript_enabled: true
 
-featured_posts_title: Unrelated
-featured_posts:
-  - url: '#'
-    title: 'Featured post #1'
-  - url: '#'
-    title: 'Featured post #2'
-  - url: '#'
-    title: 'Featured post #3'
+# featured_posts_title: Unrelated
+# featured_posts:
+#   - url: '#'
+#     title: 'Featured post #1'
+#   - url: '#'
+#     title: 'Featured post #2'
+#   - url: '#'
+#     title: 'Featured post #3'
 
 collections:
-  news:
+  Bulletins:
     title: Bulletins
     default_open: false
     output: true
@@ -30,13 +31,13 @@ defaults:
   - scope:
       type: posts
     values:
-      title: Essays
+      title: Posts
       permalink: /post/:title
   - scope:
-      type: news
+      type: posts
     values:
-      title: News
-      permalink: /news/:title
+      title: Bulletins
+      permalink: /bulletins/:title
 
 plugins:
   - jekyll-sitemap
